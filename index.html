@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="script.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+	</script>
+	<meta charset="utf-8">
+	<title>test</title>
+</head>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'Roboto';
+		    src: url('Roboto-ThinItalic-webfont.eot');
+		    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+		         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+		         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+		    font-weight: 200;
+		    font-style: italic;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: "Roboto";
+			user-select: none;
+		}
+		html {
+			background-color: #EDEEF0;
+		}
+		.canv {
+			margin-top: 200px;
+			margin-left: 15%;
+			background-color: white; 
+		}
+		#color {
+			position: absolute;
+			top: 150px;
+			width: 160px;
+			height: 50px;
+			left: 15%;
+		}
+		#clear {
+			position: absolute;
+			width: 160px;
+			height: 50px;
+			top: 150px;
+			left: 23%;
+			background-color: #D3CBFF;
+			color: black;
+			font-size: 15px;
+			border: none;
+			border: 2px solid grey;
+		}
+		#clear:hover {
+			background-color: #AE88DD;
+			color: white;
+		}
+		.thickness {
+			position: absolute;
+			top: 150px;
+			width: 160px;
+			height: 50px;
+			background-color: #D3CBFF;
+			left: 31%;
+			font-size: 15px;
+			border: none;
+			border: 2px solid grey;
+		}
+		.butwidth {
+			width: 160px;
+			height: 50px;
+			top: 100px;
+			font-size: 15px;
+			left: 31%;
+			position: absolute;
+			background-color: #D3CBFF;
+			border: none;
+			border: 2px solid grey;
+		}
+		.butwidth:hover {
+			background-color: #AE88DD;
+			color: white;
+		}
+	</style>
+
+<body>
+	<button onclick="clearCanvas()" id="clear">Очистить Canvas</button>
+	<input type="color" name="" id="color">
+	<select class="thickness" id="widthSel" name="widthSel">
+		<option value="2">2</option>
+		<option value="4">4</option>
+		<option value="7">7</option>
+		<option value="9">9</option>
+		<option value="11">11</option>
+		<option value="15">15</option>
+		<option value="20">20</option>
+		<option value="25">25</option>
+	</select>
+	<input type="button" name="" class="butwidth" onclick="razm()" value="Выбрать толщину">
+	<canvas id="drawingCanvas" class="canv" width="1000" height="500"></canvas>
+</body>
+</html>
