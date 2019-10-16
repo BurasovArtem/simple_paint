@@ -44,8 +44,25 @@ function draw(e) {
 		// Рисуем линию до новой координаты
 		context.lineWidth = thickness;
 		context.strokeStyle = myColor;
-		context.lineTo(x, y);
+		context.lineTo(x, y);				//линия
 		context.stroke();
+
+		// context.beginPath();			//треугольник
+  //       context.moveTo(x, y);
+  //       context.lineTo(x+120, y+120);
+  //       context.lineTo(x+220, y+10);
+  //       context.closePath();
+		// context.stroke();
+
+		// context.beginPath();				//диалог
+	 //    context.moveTo(x,y);
+	 //    context.quadraticCurveTo(x-50,y,x-50,y+37.5);
+	 //    context.quadraticCurveTo(x-50,y+75,x-25,y+75);
+	 //    context.quadraticCurveTo(x-25,y+95,x-45,y+100);
+	 //    context.quadraticCurveTo(x-15,y+95,x-10,y+75);
+	 //    context.quadraticCurveTo(x+50,y+75,x+50,y+37.5);
+	 //    context.quadraticCurveTo(x+50,y,x,y);
+	 //    context.stroke();
 	}
 }
 
